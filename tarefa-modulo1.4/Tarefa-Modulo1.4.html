@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML e CSS</title>
+</head>
+<style>
+html, body{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    font-family: 'Segoe UI';
+}
+header{
+    height: 50px;
+    width: 100%;
+    background: black;
+    display: flex;
+    position: fixed;
+}
+
+header span{
+    align-self: center;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 20pt;
+    margin-left: 40px;
+}
+
+.conteudo{
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+
+main{
+    margin-top: 50px;
+    height: auto;
+    width: 80%;
+    background: whitesmoke;
+    padding-left: 20px;
+}
+#titulo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+main div{
+    display: flex;
+    height: 30%;
+}
+
+#inicio-html{
+    height: 20%;
+    display: flex;
+}
+#img-inicio{
+    height: 80%;
+}
+
+aside{
+    height: auto;
+    width: 20%;
+    background: yellow;
+}
+
+#autor{
+    margin-top: 220px;
+    margin-left: 55px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: fixed;
+}
+footer{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background: black;
+    align-items: center;
+}
+
+footer span{
+    margin-left: 40px;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+</style>
+<body>
+    <header>
+        <span>resilia.blog</span>
+    </header>
+    <div class="conteudo">
+        <aside>
+            <div id=autor>
+            <img src="perfil.png" style="height: 150px; width: 150px; margin-bottom: 15px;">
+            <span style="font-weight: 600; margin-bottom: 10px;">Eduardo Pinheiro</span>
+            <a href="https://www.linkedin.com/in/eduardo-pinheiro-44152a170/">LinkedIn</a>
+            <a href="https://github.com/eduardopinheiromr">GitHub</a>
+            </div>
+        </aside>
+        <main>
+            <div id="titulo">
+            <h1>O que aprendemos até agora?</h1>
+            <p style="align-self: center;"><em>&nbsp;&nbsp;&nbsp;14/05/2020</em></p>
+            </div>
+            <div id="inicio-html">
+            <img src="HTMLJPG.jpg" id="img-inicio">
+            <p style="align-self: center; margin-left: 30px; margin-right: 70px; text-align: center;">Aprendemos a definir a estrutura básica do HTML. <br>Com a tag &lt;!DOCTYPE html&gt;, definimos qual versão do HTML estamos utilizando.A tag &lt;html&gt; marca o conteúdo<br> a ser renderizado no navegador e utilizando a propriedade <em>lang="pt-br"</em>, definimos a linguagem.</p>
+                   
+            </div>            
+            <p>Como separar as informações que estão sendo passadas para o navegador, utilizando a tag <head></head>Como definir o título de uma página, através da tag <title></title></p>
+            
+            <p>A tag <strong>meta</strong> do HTML, que permite indicar metainformações, ou seja, informações sobre o próprio documento. Aprendemos sobre o <strong>charset</strong>, propriedade da tag <em>meta</em> que serve para indicar a codificação do próprio documento.</p>
+            
+            <p>Como separar o conteúdo da página, utilizando a tag &lt;body&gt;, definir o título e os parágrafos de um texto utilizando as tags &lt;h1&gt; e &lt;p&gt;.<br><br>
+                Dar destaque para algumas informações do texto, deixando-as em <strong>negrito</strong>, utilizando a tag <strong>&lt;strong&gt;</strong> e em <em>itálico</em>, utilizando a tag <em>&lt;em&gt;</em>.</p>
+            <br>
+            <a href="https://www.devmedia.com.br/html-entities-html-symbols-html-characters/1011"><img src="barra.jpg" style="width: 98%; margin-bottom: 40px; margin-top: 20px;"></a>
+            
+            <span style="font-size: 30pt;"><strong>Estilizando com CSS</strong></span>
+            <p>Aprendemos a mexer na apresentação dos textos, no alinhamento deles (text-align), tamanho da fonte (font-size), cor de fundo (background) e cor do texto (color).</p>
+
+            <p>Aprendemos as 3 formas de inserir CSS na nossa página:</p> 
+
+            <h2>CSS inline</h2> 
+            <p>Na linha onde temos a nossa tag, adicionamos a propriedade do CSS.<br>Dentro da tag, podemos colocar marcações de CSS referentes aos elementos que temos no nosso HTML.<br><br>
+                <strong>Exemplo:</strong><br><br> &lt;img src="exemplo.jpg" <em>style="height: 100px; width: 200px;"</em>&gt;
+            </p>
+            <h2>CSS interno</h2>
+            <p>Utilizando a tag style dentro do head da página HTML:</p>
+            <span><strong>Exemplo:<br></strong></span>
+            <span><br>&lt;head&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seletor { propriedade: valor; }<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+            &lt;/head&gt;</span><br>
+            
+            <h2>CSS externo</h2>            
+            <p>O CSS pode ser inserido com um arquivo externo, isto permite que a mesma folha de estilo seja usada em infinitas páginas.<br>
+            Para utilizar o CSS externo, basta criar o arquivo <em>style.css</em> e fazer referência a ele dentro da &lt;head&gt; da página.
+            </p>
+            <p><strong>Exemplo:<br><br></strong> &lt;link rel="stylesheet" href="reset.css"&gt;</p>
+            <a href="https://origamid.com/projetos/flexbox-guia-completo/"><img src="barra2.jpg" style="width: 98%; margin-bottom: 40px; margin-top: 20px;"></a>
+
+
+        </main>
+        </div>
+    <footer>
+        <span>RESILIA</span>
+    </footer>
+</body>
+</html>
