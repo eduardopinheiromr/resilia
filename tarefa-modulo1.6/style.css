@@ -3,46 +3,55 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 150vh;
+  height: 100%;
   width: auto;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  height: 5%;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho {
+  height: 100%;
+  width: 100%;
   font-family: arial;
   display: flex;
-  background-color: #fafafa;
+  background: #fafafa;
   color: whitesmoke;
   align-items: center;
+  justify-content: space-between;
 }
 
-#home a {
-  margin-left: 50px;
+.urlhome {
+  text-decoration: none;
+  height: 50px;
+  width: auto;
   color: black;
-}
-
-nav {
-  margin-left: 35%;
   display: flex;
   align-items: center;
-  height: 100%;
-  margin-right: 10%;
+  justify-content: center;
+  margin-left: 50px;
 }
+
 .menu {
   display: flex;
-  list-style: none;
-  width: 500px;
-  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
 }
+
 .item-menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 125px;
-  height: 100%;
-  background: #fafafa;
+  height: 50px;
+  width: 100%;
   font-weight: 100;
   color: #333333;
 }
@@ -54,36 +63,67 @@ nav {
   background: lightgray;
 }
 .urlpagina {
+  width: 100px;
   color: black;
   text-decoration: none;
 }
 
 #nightmodebtn {
-  margin-right: 2%;
   height: 20px;
   width: 20px;
   background: url(./_img/night.svg);
   cursor: pointer;
 }
 
+#divnightmode {
+  min-height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .whitesection {
-  background: white;
   width: 100%;
-  height: 5%;
+  min-height: 50px;
 }
 
 main {
-  height: 85%;
   background: #fafafa;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-bottom: 30px;
+}
+
+.filmes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 100%;
+}
+.posters {
+  border-radius: 10px;
+  height: 300px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 footer {
   background: #cfcfcf;
-  height: 15%;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.rodape {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .icone {
   height: 50px;
 }
@@ -96,4 +136,48 @@ footer {
 #copywright {
   font-family: SEGOE UI;
   margin-top: 10px;
+}
+
+@media (max-width: 1071px) {
+  .posters {
+    height: 400px;
+  }
+}
+
+@media (max-width: 680px) {
+  .posters {
+    height: 500px;
+  }
+}
+@media (max-width: 580px) {
+  header {
+    flex-direction: column;
+  }
+  .cabecalho {
+    height: 150px;
+    flex-direction: column;
+  }
+  .urlhome {
+    margin: 0;
+  }
+  .posters {
+    height: 500px;
+  }
+  .menu {
+    height: 50px;
+    justify-content: space-around;
+  }
+  .item-menu {
+    width: 100px;
+  }
+  .whitesection {
+    position: relative;
+    top: 100px;
+  }
+  main {
+    margin-top: 100px;
+  }
+  .menu {
+    width: 100%;
+  }
 }
