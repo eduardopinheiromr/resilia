@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se no Resilia</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            font-family: SEGOE UI;
+            display: flex;
+            flex-direction: column;
+            background: #333333;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            color: yellow;
+        }
+
+        .informacoes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            width: 60%;
+            background: yellow;
+            color: black;
+            align-self: center;
+        }
+        .input{
+            width: 400px;
+            height: 30px;
+            text-align: center;
+            border: none;
+        }
+        button{
+            background: black;
+            color: yellow;
+            font-weight: bolder;
+            font-size: 1.1rem;
+            border: none;
+            width: 400px;
+            height: 50px;
+        }
+        footer{
+            background: black;
+            color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>resilia.work</h1></header><br>
+    <div class="informacoes">
+    <h2>Participe do processo seletivo do Resilia :)</h2>
+    <h3>Nome completo:</h3>    
+    <input type="text" placeholder="ex: Rocky Balboa" class="input">
+    <h3>Data de nascimento:</h3>
+    <input type="date" class="input">
+    <h3>CPF:</h3>
+    <input type="number" placeholder="000.000.000-00" class="input">
+    <h3>E-mail:</h3>
+    <input type="email" placeholder="rocky@balboa.com" class="input"><br><br>
+    <button onclick="alert('Inscrição feita com sucesso! Entraremos em contato pelo e-mail informado')">Quero me inscrever agora!</button><br>
+    </div><br>
+    <footer><h3>Eduardo Pinheiro</h3></footer>
+</body>
+</html>

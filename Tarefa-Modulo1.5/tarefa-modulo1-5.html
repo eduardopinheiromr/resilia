@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha página, minha vida</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 100%;
+            font-family: SEGOE UI;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            background: black;
+            font-size: 20pt;
+            font-weight: bold;
+            color: yellow;
+        }
+        main{
+            background: whitesmoke;
+        }
+        h1{
+            text-align: center;
+        }
+        .fofa{
+            flex-direction: row;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+        .quadrado{
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+        .amarelo{background: yellow;}
+        .verde{background: green;}
+        .vermelho{background: red;}
+        .azul{background: blue;}
+
+        .coluna{
+            flex-direction: column;
+        }
+        h2{
+            margin-left: 40px;
+        }
+        .historias{
+            margin-top: 50px;
+            flex-direction: column;
+            background: lightgray;
+        }
+        h3{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        p{
+            text-align: center; 
+            padding: 20px; 
+            margin-left: 20%; 
+            margin-right: 20%;
+        }
+        .block{
+            display: block;
+        }
+        .flex{
+            display: flex;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            background: black;
+            color: yellow;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header><span style="margin-left: 60px;">Eduardo Pinheiro - 24 anos</span></header>
+    <main>
+        <h1>Análise FOFA</h1>
+        <div class="fofa flex">
+        <div class="coluna flex">
+        <div class="quadrado amarelo flex">Forças</div>
+        <div class="quadrado vermelho flex">Fraquezas</div>
+        </div><div class="coluna flex">
+        <div class="quadrado verde flex">Oportunidades</div>
+        <div class="quadrado azul flex">Ameaças</div>
+        </div>
+        <div class="coluna flex">
+        <h2>Forças</h2>
+        <ul>
+            <li>Boa comunicação</li>
+            <li>Aprendizado rápido</li>
+            <li>Paciência e foco</li>
+            <li>Vontade de ajudar</li>
+            <li>Proatividade</li>
+        </ul>
+        <h2>Fraquezas</h2>
+        <ul>
+        <li>Histórico inconsistente</li>
+        <li>Nenhuma certificação com peso</li>
+        <li>Tendência centralizadora</li>
+        <li>Estresse e ansiedade ao sentir sobrecarga</li>
+        </ul>
+        </div>
+        <div class="coluna flex">
+        <h2>Oportunidades</h2>
+        <ul>
+            <li>Mercado de trabalho aquecido</li>
+            <li>Tempo hábil para capacitação</li>
+            <li>Acesso a muitos profissionais já empregados e oportunidades em plataformas que participarei</li>
+        </ul><br><br>
+        <h2>Ameaças</h2>
+        <ul>
+            <li>Pandemia esfriar até a área de TI</li>
+            <li>As vagas de desenvolvedor se restringirem a profissionais super qualificados com experiência</li>
+        </ul>
+        </div>
+        </div>
+        <div class="historias flex">
+        <span style="font-size: 2rem; font-weight: bolder; margin-top: 30px; text-align: center;">Histórias marcantes</span>
+        <br>
+        <h3>Vida pessoal</h3>
+        <p>De 2018 a 2019 entrei para o Projeto Philia, um grupo de voluntariado que ajudava crianças carentes na região de Rio das Ostras. Todo meu tempo livre foi direcionado para impulsionar o projeto e me tornei peça chave na organização dos eventos e recolhimento de doações. Um dos momentos que mais me marcou, foi a conversa que tive com um adolescente em um dos eventos do Philia. Ele catava latinhas com o pai e o irmão para sobreviver. Após uma longa conversa sobre vida e crescimento, ele teve insights sobre como tornar mais eficiente a coleta e dar uma escala maior. Lembro dele falando que tava ansioso pra chegar em casa e contar tudo pro pai.</p>
+    
+        <h3>Vida profissional</h3>
+        <p>Meu primeiro dia vendendo meus doces na Intendente Magalhães. Eu entrava em pânico com a ideia de abordar pessoas desconhecidas, principalmente para oferecer um produto. Meu doce não era barato e tive muita dificuldade nas 3 primeiras tentativas de venda. Gaguejava, suava frio, não conseguia transmitir o valor do meu produto. Eu precisava muito de dinheiro e desistir não era uma opção, então parei no meio da calçada e comecei a pensar no que eu estava fazendo e como. Construí uma apresentação e ensaiei 3x falando sozinho. Entrei em uma loja de carros e tentei novamente, tive sucesso e desde então minha cabeça nunca mais funcionou da mesma forma. Empreender virou uma paixão, fechar negócios, mesmo que os mais simples era viciante. O “não” se tornou uma oportunidade para outras pessoas consumirem meu produto, que era limitado e com o tempo, super requisitado.</p>
+        <br><br>
+    </div>
+    </main>    
+    <footer><span style="margin-left: 30px;">Resilia</span></footer>
+
+
+
+</body>
+</html>
