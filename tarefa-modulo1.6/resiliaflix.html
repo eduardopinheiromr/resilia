@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResiFlix</title>
+    <link rel="stylesheet" href="style.css" id="daymode" />
+    <link rel="stylesheet" href="nightmode.css" id="nightmode" disabled />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <a class="urlhome" href="#">
+          <h2 id="home">
+            ResiFlix
+          </h2></a
+        >
+        <nav class="menu">
+          <a class="urlpagina" href="#"><div class="item-menu">Filmes</div></a>
+          <a class="urlpagina" href="#"><div class="item-menu">Séries</div></a>
+          <a class="urlpagina" href="#"><div class="item-menu">Contato</div></a>
+          <a class="urlpagina" href="#"><div class="item-menu">Sobre</div></a>
+        </nav>
+        <div id="divnightmode">
+          <img
+            src="night.svg"
+            onclick="habilitarNightmode()"
+            id="nightmodebtn"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="whitesection"></div>
+    <main>
+      <div class="filmes">
+        <img class="posters" src="/recursos_resiliaflix/1917_capa.jpg" />
+        <img class="posters" src="/recursos_resiliaflix/a_origem.jpg" />
+        <img
+          class="posters"
+          src="/recursos_resiliaflix/bad_boys_para_sempre.jpg"
+        />
+        <img
+          class="posters"
+          src="/recursos_resiliaflix/batman_cavaleiro_das_trevas.jpg"
+        />
+        <img class="posters" src="/recursos_resiliaflix/coringa.jpg" />
+        <img
+          class="posters"
+          src="/recursos_resiliaflix/era_uma_vez_em_hollywood.jpg"
+        />
+        <img class="posters" src="/recursos_resiliaflix/forrest_gump.jpg" />
+        <img class="posters" src="/recursos_resiliaflix/jojo_rabit.jpg" />
+        <img
+          class="posters"
+          src="/recursos_resiliaflix/magnatas_do_crime_capa.jpg"
+        />
+        <img
+          class="posters"
+          src="/recursos_resiliaflix/o_homem_invisivel_capa.jpg"
+        />
+        <img class="posters" src="/recursos_resiliaflix/o_poco_capa.jpg" />
+        <img class="posters" src="/recursos_resiliaflix/parasita_capa.jpg" />
+        <img
+          class="posters"
+          src="/recursos_resiliaflix/vingadores_ultimato.jpg"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <div class="rodape">
+        <div class="icones">
+          <a href="#"><img src="facebook.svg" id="facebook" class="icone" /></a>
+          <a href="#"
+            ><img src="instagram.svg" id="instagram" class="icone"
+          /></a>
+          <a href="#"><img src="twitter.svg" id="twitter" class="icone" /></a>
+          <a href="#"><img src="youtube.svg" id="youtube" class="icone" /></a>
+        </div>
+        <span id="copywright">&copy; ResiFlix</span>
+      </div>
+    </footer>
+  </body>
+</html>
