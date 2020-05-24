@@ -24,15 +24,23 @@
         </nav>
         <div id="divnightmode">
           <img
-            src="night.svg"
+            src="./night.svg"
             onclick="habilitarNightmode()"
             id="nightmodebtn"
           />
         </div>
       </div>
     </header>
-    <div class="whitesection"></div>
+    <div class="whitesection">
+      <input
+        type="text"
+        id="search"
+        placeholder="digite o nome de um filme(inglês) e aperte enter..."
+      />
+    </div>
     <main>
+      <button id="fecharpesquisa" onclick="fecharPesquisa()">X</button>
+      <div id="filmepesquisado"></div>
       <div class="filmes">
         <img class="posters" src="./recursos_resiliaflix/1917_capa.jpg" />
         <img class="posters" src="./recursos_resiliaflix/a_origem.jpg" />
@@ -81,5 +89,6 @@
         <span id="copywright">&copy; ResiFlix</span>
       </div>
     </footer>
+    <script src="pesquisafilme.js"></script>
   </body>
 </html>
