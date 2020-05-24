@@ -16,7 +16,7 @@ function pesquisaFilme() {
 }
 
 function buscaAPI(nomeDoFilme) {
-  fetch(`http://www.omdbapi.com/?t=${nomeDoFilme}&apikey=f3982364`).then(
+  fetch(`https://www.omdbapi.com/?t=${nomeDoFilme}&apikey=f3982364`).then(
     function (response) {
       response.json().then(function (data) {
         render(data);
