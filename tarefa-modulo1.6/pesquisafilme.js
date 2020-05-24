@@ -59,6 +59,7 @@ function render(apiJSON) {
   btnFecharPesquisa.style.display = 'block';
   divFilme.appendChild(imagem);
   divFilme.appendChild(divTexto);
+  search.value = '';
 }
 
 function fecharPesquisa() {
