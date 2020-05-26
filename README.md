@@ -8,3 +8,5 @@ Projetos feitos durante o bootcamp Resilia
 <a href="https://eduardopinheiromr.github.io/resilia/Tarefa-Modulo1.5/tarefa-modulo1-5.html"><h2>#3 - Análise FOFA e histórias marcantes</h2></a>
 
 <a href="https://eduardopinheiromr.github.io/resilia/tarefa-modulo1.6/resiliaflix.html"><h2>#4 - Resiflix, responsivo com nightmode.</h2></a>
+
+<a href="https://eduardopinheiromr.github.io/resilia/Blog-Tarefas/tarefasanteriores.html"><h2>#5 - Tarefas Diárias: baú resilia</h2></a>
