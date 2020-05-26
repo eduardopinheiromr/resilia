@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 160vh;
+  min-height: 160vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,19 @@ header {
   justify-content: space-between;
 }
 
+header a.logo {
+  height: 100%;
+  text-decoration: none;
+  color: #f0c52c;
+  margin-left: 5%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+header a:hover {
+  background: rgb(83, 0, 83);
+}
+
 .logo {
   width: 175px;
   display: flex;
@@ -43,21 +56,21 @@ header {
   justify-content: space-between;
   font-size: 20pt;
   font-weight: 700;
-  margin-left: 5%;
+  transition: 1s;
 }
 
 header nav {
   display: flex;
   height: 100%;
-  width: auto;
+  width: 400px;
   align-items: center;
   justify-content: space-around;
   margin-right: 5%;
 }
 
 .item-navbar {
-  height: 100%;
-  width: 125px;
+  height: 50px;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,9 +86,8 @@ header nav {
 }
 
 main {
-  height: 150vh;
+  height: auto;
   background: whitesmoke;
-  padding-bottom: 50px;
   transition: 2s;
 }
 
@@ -95,7 +107,7 @@ main {
 }
 
 .ultima-tarefa {
-  height: 100%;
+  height: auto;
   background: rgb(230, 230, 230);
   padding: 25px;
   padding-left: 35px;
@@ -132,6 +144,22 @@ h1 {
 .box-ultima-tarefa:hover {
   transform: scale(1.04);
   box-shadow: 1px 1px 40px gray;
+}
+
+.texto-tarefa {
+  text-align: center;
+}
+
+ul {
+  text-align: start;
+}
+
+#homework h2 {
+  margin-bottom: -1px;
+}
+
+.amarelo {
+  color: #f0c52c;
 }
 
 .link-tarefa {
@@ -212,13 +240,12 @@ footer span {
   }
 
   .item-navbar {
-    height: 80%;
+    height: 50px;
     width: 33%;
   }
 
   header nav {
     width: 100%;
-    align-items: flex-end;
   }
 
   .div-aviso {
