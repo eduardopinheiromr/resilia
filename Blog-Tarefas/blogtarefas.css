@@ -1,0 +1,231 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 160vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: SEGOE UI;
+}
+
+.div-aviso {
+  width: 100%;
+  display: flex;
+  font-size: 11pt;
+  background: rgb(66, 1, 66);
+  color: rgb(66, 1, 66);
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: 2s;
+}
+
+.div-aviso:hover {
+  background: black;
+}
+
+header {
+  min-height: 50px;
+  width: 100%;
+  background: purple;
+  color: #f0c52c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20pt;
+  font-weight: 700;
+  margin-left: 5%;
+}
+
+header nav {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+
+.item-navbar {
+  height: 100%;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: 600;
+  color: #f0c52c;
+  transition: 1s;
+}
+
+.item-navbar:hover {
+  background: rgb(83, 0, 83);
+}
+
+main {
+  height: 150vh;
+  background: whitesmoke;
+  padding-bottom: 50px;
+  transition: 2s;
+}
+
+#news {
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+
+.transition {
+  transition: 1s;
+}
+
+.hoverrr:hover {
+  transform: scale(1.1);
+}
+
+.ultima-tarefa {
+  height: 100%;
+  background: rgb(230, 230, 230);
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(97, 2, 97);
+}
+
+#titulo-ultima-tarefa {
+  font-size: 25pt;
+  font-weight: bold;
+  color: purple;
+  margin-bottom: 35px;
+}
+
+.box-ultima-tarefa {
+  background: rgb(204, 180, 204);
+  height: auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 15px;
+  border-radius: 30px;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.box-ultima-tarefa:hover {
+  transform: scale(1.04);
+  box-shadow: 1px 1px 40px gray;
+}
+
+.link-tarefa {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+}
+
+#homework {
+  margin-top: 30px;
+  display: flex;
+  width: 70%;
+  text-align: center;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  background: rgb(90, 51, 90);
+  transition: 1s;
+}
+
+#homework:hover {
+  background: rgb(49, 28, 49);
+}
+
+#homework h2 {
+  color: #f0c52c;
+}
+
+#homework a {
+  text-decoration: none;
+  margin-bottom: 30px;
+  color: #f0c52c;
+}
+
+footer {
+  display: flex;
+  min-height: 150px;
+  background: purple;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer div {
+  padding-bottom: 1.5px;
+  padding-left: 1.7px;
+  padding-right: 1.7px;
+  background: rgb(255, 209, 255);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+footer div:hover {
+  box-shadow: 1px 1px 30px rgb(68, 1, 68);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+footer img {
+  height: 75px;
+}
+
+footer span {
+  color: whitesmoke;
+  margin-top: 10px;
+}
+
+@media (max-width: 652px) {
+  header {
+    padding-top: 5px;
+    min-height: 100px;
+    flex-direction: column;
+  }
+
+  .item-navbar {
+    height: 80%;
+    width: 33%;
+  }
+
+  header nav {
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .div-aviso {
+    top: 55px;
+  }
+
+  .box-ultima-tarefa {
+    text-align: center;
+  }
+}
